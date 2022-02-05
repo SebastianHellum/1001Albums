@@ -50,20 +50,26 @@ function App() {
 
   return (
     <div className="App">
-      <select onChange={(e) => setSortTypeAsc(e.target.value)}>
-        <option value="albums">Albums</option>
-        <option value="members">Members</option>
-        <option value="formed">Formed in</option>
-      </select>
-
-      {data.map((band) => (
-        <div key={band.id} style={{ margin: "30px" }}>
-          <div>{`Band: ${band.name}`}</div>
-          <div>{`Albums: ${band.albums}`}</div>
-          <div>{`Members: ${band.members}`}</div>
-          <div>{`Year of founding: ${band.formed_in}`}</div>
-        </div>
-      ))}
+      <div className="Options">
+        <select onChange={(e) => setSortTypeAsc(e.target.value)}>
+          <option value="albums">Albums</option>
+          <option value="members">Members</option>
+          <option value="formed">Formed in</option>
+        </select>
+      </div>
+      <Grid container spacing={3}>
+        {data.map((albums) => (
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <div key={albums.id} style={{ margin: "30px" }}>
+              <div>{`Album number: ${albums.AlbumNumber}`}</div>
+              <div>{`Titles: ${albums.Title}`}</div>
+              <div>{`Artist: ${albums.Artist}`}</div>
+              <div>{`Members: ${albums.members}`}</div>
+              <div>{`Year of founding: ${albums.formed_in}`}</div>
+            </div>
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 }
