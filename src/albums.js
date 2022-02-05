@@ -57,6 +57,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 5,
     Comment: "Littt ensformig uten sang",
+    img: "./img/6.jpg",
   },
   {
     AlbumNumber: 7,
@@ -66,6 +67,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 7,
     Comment: "Klassisk Fran Sinatra",
+    img: "./img/7.jpg",
   },
   {
     AlbumNumber: 8,
@@ -75,6 +77,7 @@ export const albums = [
     FavoriteSong: "Oh Boy!",
     OneToTen: 6.5,
     Comment: "Barbershop-musikk ",
+    img: "./img/8.jpg",
   },
   {
     AlbumNumber: 9,
@@ -84,6 +87,7 @@ export const albums = [
     FavoriteSong: "Kid from the Red Bank",
     OneToTen: 6,
     Comment: "Liker stilen, men savner vokal",
+    img: "./img/9.jpg",
   },
   {
     AlbumNumber: 10,
@@ -93,6 +97,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 3,
     Comment: "Begynn å spille rent",
+    img: "./img/10.jpg",
   },
   {
     AlbumNumber: 11,
@@ -102,6 +107,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 4.5,
     Comment: "God stemning, men ikke noe spess",
+    img: "./img/11.jpg",
   },
   {
     AlbumNumber: 12,
@@ -111,6 +117,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 5.5,
     Comment: "Fin bakgrunnsmusikk",
+    img: "./img/12.jpg",
   },
   {
     AlbumNumber: 13,
@@ -120,6 +127,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 4.5,
     Comment: "Litt masete ",
+    img: "./img/13.jpg",
   },
   {
     AlbumNumber: 14,
@@ -129,6 +137,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 7.5,
     Comment: "Får lyst til å gå på en klassisk bar",
+    img: "./img/14.jpg",
   },
   {
     AlbumNumber: 15,
@@ -138,6 +147,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 6.5,
     Comment: "En sigar og en Cuba Libre, takk! ",
+    img: "./img/15.jpg",
   },
   {
     AlbumNumber: 16,
@@ -147,6 +157,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 5.5,
     Comment: "Veldig fint, men litt monotont ",
+    img: "./img/16.jpg",
   },
   {
     AlbumNumber: 17,
@@ -156,6 +167,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 3.5,
     Comment: "Masete",
+    img: "./img/17.jpg",
   },
   {
     AlbumNumber: 18,
@@ -165,6 +177,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 6,
     Comment: "Koselig, behagelig bakgrunnsmusikk",
+    img: "./img/18.jpg",
   },
   {
     AlbumNumber: 19,
@@ -174,6 +187,7 @@ export const albums = [
     FavoriteSong: "Let's call the whole thing off",
     OneToTen: 6.5,
     Comment: "Kjempekoselig",
+    img: "./img/19.jpg",
   },
   {
     AlbumNumber: 20,
@@ -183,6 +197,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 7,
     Comment: "Burde høres på når man har middagsgjester",
+    img: "./img/20.jpg",
   },
   {
     AlbumNumber: 21,
@@ -192,6 +207,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 7,
     Comment: "Fint, men skiller seg ikke ut.",
+    img: "./img/21.jpg",
   },
   {
     AlbumNumber: 22,
@@ -201,6 +217,7 @@ export const albums = [
     FavoriteSong: "Billy The Kid",
     OneToTen: 7,
     Comment: "Klassisk Kountry",
+    img: "./img/22.jpg",
   },
   {
     AlbumNumber: 23,
@@ -210,6 +227,7 @@ export const albums = [
     FavoriteSong: "Take Five",
     OneToTen: 7.5,
     Comment: "Deilig bakgrunnsjazz",
+    img: "./img/23.jpg",
   },
   {
     AlbumNumber: 24,
@@ -219,15 +237,17 @@ export const albums = [
     FavoriteSong: "Make Me Know It",
     OneToTen: 5.5,
     Comment: "Litt gjentagende, men noe bra",
+    img: "./img/24.jpg",
   },
   {
     AlbumNumber: 25,
     Year: 1960,
     Artist: "Miriam Makeba",
-    Title: "Miriam Makeba ",
+    Title: "Miriam Makeba",
     FavoriteSong: "One more dance",
     OneToTen: 6.5,
     Comment: "Feriefølelse",
+    img: "./img/25.jpg",
   },
   {
     AlbumNumber: 26,
@@ -237,6 +257,7 @@ export const albums = [
     FavoriteSong: "Love Hurts",
     OneToTen: 7.5,
     Comment: "Love Hurts!",
+    img: "./img/26.jpg",
   },
   {
     AlbumNumber: 27,
@@ -246,6 +267,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 7,
     Comment: "Deilig jazz",
+    img: "./img/27.jpg",
   },
   {
     AlbumNumber: 28,
@@ -255,6 +277,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 5.5,
     Comment: "I got the blues",
+    img: "./img/28.jpg",
   },
   {
     AlbumNumber: 29,
@@ -262,8 +285,9 @@ export const albums = [
     Artist: "Bill Evans",
     Title: "Sunday At The Village Vanguard",
     FavoriteSong: "",
-    OneToTen: null,
-    Comment: "",
+    OneToTen: 5,
+    Comment: "Litt kjedelig",
+    img: "./img/29.jpg",
   },
   {
     AlbumNumber: 30,
@@ -273,6 +297,7 @@ export const albums = [
     FavoriteSong: "Bye Bye Love",
     OneToTen: 7,
     Comment: "Musikk man kan høre på når man har besøk",
+    img: "./img/30.jpg",
   },
   {
     AlbumNumber: 31,
@@ -282,6 +307,7 @@ export const albums = [
     FavoriteSong: "Green Onions",
     OneToTen: 5.5,
     Comment: "Musikk til kirkekaffen ",
+    img: "./img/31.jpg",
   },
   {
     AlbumNumber: 32,
@@ -291,6 +317,7 @@ export const albums = [
     FavoriteSong: "",
     OneToTen: 5.5,
     Comment: "Fint, men skiller seg ikke ut",
+    img: "./img/32.jpg",
   },
   {
     AlbumNumber: 33,
@@ -298,16 +325,28 @@ export const albums = [
     Artist: "Ray Price",
     Title: "Night Life",
     FavoriteSong: "",
-    OneToTen: null,
-    Comment: "",
+    OneToTen: 4.5,
+    Comment: "Litt kjedelig, kunne ha blitt spilt på Valdres radio",
+    img: "./img/33.jpg",
   },
   {
     AlbumNumber: 34,
     Year: 1963,
     Artist: "The Beatles",
     Title: "With the Beatles",
-    FavoriteSong: "",
-    OneToTen: null,
-    Comment: "",
+    FavoriteSong: "All My Loving",
+    OneToTen: 6,
+    Comment: "Klassiker, men ikke det beste av The Beatles",
+    img: "./img/34.jpg",
+  },
+  {
+    AlbumNumber: 35,
+    Year: 1963,
+    Artist: "Bob Dylan",
+    Title: "The Freewheelin' Bob Dylan",
+    FavoriteSong: "Blowin In The Wind",
+    OneToTen: 7.25,
+    Comment: "Mye fint, kult med munnspill",
+    img: "./img/35.jpg",
   },
 ];

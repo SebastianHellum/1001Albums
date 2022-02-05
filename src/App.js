@@ -66,10 +66,22 @@ function App() {
           <option value="Rating">Rating ⬇️</option>
         </select>
       </div>
-      <Grid container spacing={3}>
+      <Grid
+        style={{ marginLeft: "auto", marginRight: "auto", marginTop: "2vh" }}
+        container
+        spacing={1}
+      >
         {data.map((albums) => (
-          <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Card className="AlbumCard" sx={{ maxWidth: 345 }}>
+          <Grid item xs={12} md={3} lg={3}>
+            <Card
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: "2vh",
+              }}
+              className="AlbumCard"
+              sx={{ maxWidth: 345 }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
