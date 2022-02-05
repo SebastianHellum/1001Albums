@@ -60,13 +60,26 @@ function App() {
       <Grid container spacing={3}>
         {data.map((albums) => (
           <Grid item xs={12} sm={6} md={4} lg={3}>
-            <div key={albums.id} style={{ margin: "30px" }}>
-              <div>{`Album number: ${albums.AlbumNumber}`}</div>
-              <div>{`Titles: ${albums.Title}`}</div>
-              <div>{`Artist: ${albums.Artist}`}</div>
-              <div>{`Members: ${albums.members}`}</div>
-              <div>{`Year of founding: ${albums.formed_in}`}</div>
-            </div>
+            <Card className="AlbumCard" sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={albums.img}
+                  alt={albums.Title}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {albums.Title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {albums.AlbumNumber} - {albums.Artist} - {albums.Year} -{" "}
+                    {albums.OneToTen}/10 -
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions></CardActions>
+            </Card>
           </Grid>
         ))}
       </Grid>
