@@ -11,8 +11,8 @@ import React from "react";
 
 function App() {
   const [data, setData] = useState([]);
-  const [sortType, setSortType] = useState("albums");
-  const [sortOther, setSortTypeOther] = useState("albums");
+  const [sortType, setSortTypeAsc] = useState("albums");
+  const [sortOther, setSortTypeDesc] = useState("albums");
 
   useEffect(() => {
     const sortArray = (type) => {
@@ -50,14 +50,17 @@ function App() {
 
   return (
     <div className="App">
+      <div className="header">
+        <h1>1001 Album du må høre før du dør</h1>
+      </div>
       <div className="options">
-        <select onChange={(e) => setSortType(e.target.value)}>
+        <select onChange={(e) => setSortTypeAsc(e.target.value)}>
           <option value="AlbumNumber">Album Number ⬆️</option>
           <option value="Year">Year ⬆️</option>
           <option value="Rating">Rating ⬆️</option>
         </select>
 
-        <select onChange={(e) => setSortTypeOther(e.target.value)}>
+        <select onChange={(e) => setSortTypeDesc(e.target.value)}>
           <option value="AlbumNumber">Album Number ⬇️</option>
           <option value="Year">Year ⬇️</option>
           <option value="Rating">Rating ⬇️</option>
