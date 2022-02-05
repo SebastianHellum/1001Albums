@@ -41,3 +41,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.options {
+  padding: 5vh;
+}

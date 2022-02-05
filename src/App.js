@@ -11,15 +11,32 @@ import React from "react";
 
 function App() {
   const [data, setData] = useState([]);
-  const [sortTypeAsc, setSortTypeAsc] = useState("albums");
-  const [sortTypeDesc, setSortTypeDesc] = useState("albums");
+  const [sortType, setSortType] = useState("albums");
+  const [sortOther, setSortTypeOther] = useState("albums");
 
   useEffect(() => {
-    const sortArrayAsc = (type) => {
+    const sortArray = (type) => {
       const types = {
-        albums: "albums",
-        members: "members",
-        formed: "formed_in",
+        AlbumNumber: "AlbumNumber",
+        Year: "Year",
+        Rating: "OneToTen",
+      };
+      const sortProperty = types[type];
+      const sorted = [...albums].sort(
+        (a, b) => a[sortProperty] - b[sortProperty]
+      );
+      setData(sorted);
+    };
+
+    sortArray(sortType);
+  }, [sortType]);
+
+  useEffect(() => {
+    const sortArray = (type) => {
+      const types = {
+        AlbumNumber: "AlbumNumber",
+        Year: "Year",
+        Rating: "OneToTen",
       };
       const sortProperty = types[type];
       const sorted = [...albums].sort(
@@ -28,33 +45,22 @@ function App() {
       setData(sorted);
     };
 
-    sortArrayAsc(sortTypeAsc);
-  }, [sortTypeAsc]);
-
-  useEffect(() => {
-    const sortArrayAsc = (type) => {
-      const types = {
-        albums: "albums",
-        members: "members",
-        formed: "formed_in",
-      };
-      const sortProperty = types[type];
-      const sorted = [...albums].sort(
-        (a, b) => b[sortProperty] - a[sortProperty]
-      );
-      setData(sorted);
-    };
-
-    sortArrayAsc(sortTypeDesc);
-  }, [sortTypeDesc]);
+    sortArray(sortOther);
+  }, [sortOther]);
 
   return (
     <div className="App">
-      <div className="Options">
-        <select onChange={(e) => setSortTypeAsc(e.target.value)}>
-          <option value="albums">Albums</option>
-          <option value="members">Members</option>
-          <option value="formed">Formed in</option>
+      <div className="options">
+        <select onChange={(e) => setSortType(e.target.value)}>
+          <option value="AlbumNumber">Album Number ⬆️</option>
+          <option value="Year">Year ⬆️</option>
+          <option value="Rating">Rating ⬆️</option>
+        </select>
+
+        <select onChange={(e) => setSortTypeOther(e.target.value)}>
+          <option value="AlbumNumber">Album Number ⬇️</option>
+          <option value="Year">Year ⬇️</option>
+          <option value="Rating">Rating ⬇️</option>
         </select>
       </div>
       <Grid container spacing={3}>
