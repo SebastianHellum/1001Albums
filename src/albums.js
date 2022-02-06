@@ -8,6 +8,7 @@ export const albums = [
     OneToTen: 7.5,
     Comment: "Smørsanger, deilig stemning ",
     img: "./img/1.jpg",
+    Link: "https://open.spotify.com/album/3GmwKB1tgPZgXeRJZSm9WX",
   },
   {
     AlbumNumber: 2,

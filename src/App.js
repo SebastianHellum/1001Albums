@@ -13,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import { Box } from "@mui/system";
 import FormControl from "@mui/material/FormControl";
+import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 
 function App() {
   const [data, setData] = useState([]);
@@ -63,41 +64,29 @@ function App() {
         <img src="./img/vinyl.png" alt="vinyl logo" className="vinyl-logo" />
       </div>
       <div>
-        <Box
-          sx={{ maxWidth: 200 }}
-          style={{ marginLeft: "auto", marginRight: "auto" }}
-        >
-          <FormControl fullWidth>
-            <InputLabel>Sorter oppover ⬆️</InputLabel>
-            <Select
-              style={{ backgroundColor: "white" }}
-              onChange={(e) => setSortTypeAsc(e.target.value)}
-              label="Sorter oppover ⬆️"
-            >
-              <MenuItem value="AlbumNumber">Album Number ⬆️</MenuItem>
-              <MenuItem value="Year">Year ⬆️</MenuItem>
-              <MenuItem value="Rating">Rating ⬆️</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
+        <FormControl sx={{ m: 1, minWidth: 200 }}>
+          <InputLabel>Sorter oppover ⬆️</InputLabel>
+          <Select
+            style={{ backgroundColor: "white" }}
+            onChange={(e) => setSortTypeAsc(e.target.value)}
+          >
+            <MenuItem value="AlbumNumber">Album Number ⬆️</MenuItem>
+            <MenuItem value="Year">Year ⬆️</MenuItem>
+            <MenuItem value="Rating">Rating ⬆️</MenuItem>
+          </Select>
+        </FormControl>
 
-        <Box
-          sx={{ maxWidth: 200 }}
-          style={{ marginLeft: "auto", marginRight: "auto" }}
-        >
-          <FormControl fullWidth>
-            <InputLabel>Sorter nedover ⬇️</InputLabel>
-            <Select
-              style={{ backgroundColor: "white" }}
-              onChange={(e) => setSortTypeDesc(e.target.value)}
-              label="Sorter nedover ⬇️"
-            >
-              <MenuItem value="AlbumNumber">Album Number ⬇️</MenuItem>
-              <MenuItem value="Year">Year ⬇️</MenuItem>
-              <MenuItem value="Rating">Rating ⬇️</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
+        <FormControl sx={{ m: 1, minWidth: 200 }}>
+          <InputLabel>Sorter nedover ⬇️</InputLabel>
+          <Select
+            style={{ backgroundColor: "white" }}
+            onChange={(e) => setSortTypeDesc(e.target.value)}
+          >
+            <MenuItem value="AlbumNumber">Album Number ⬇️</MenuItem>
+            <MenuItem value="Year">Year ⬇️</MenuItem>
+            <MenuItem value="Rating">Rating ⬇️</MenuItem>
+          </Select>
+        </FormControl>
       </div>
       <Grid
         style={{ marginLeft: "auto", marginRight: "auto", marginTop: "2vh" }}
@@ -135,7 +124,7 @@ function App() {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {albums.AlbumNumber} - {albums.Artist} - {albums.Year} -{" "}
-                    {albums.OneToTen}/10 -
+                    {albums.OneToTen}/10
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -143,7 +132,22 @@ function App() {
                 style={{
                   background: "linear-gradient(to right, #ce770d, #ff9311)",
                 }}
-              ></CardActions>
+              >
+                <a href={albums.Link} target="_blank" rel="noreferrer">
+                  <img
+                    src="./img/spotify.png"
+                    alt="spotify logo"
+                    className="spotify-logo"
+                  />
+                </a>
+                <Typography
+                  style={{ marginLeft: "auto", marginRight: "auto" }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  {albums.Comment}
+                </Typography>
+              </CardActions>
             </Card>
           </Grid>
         ))}
