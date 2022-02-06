@@ -8,6 +8,11 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import React from "react";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import InputLabel from "@mui/material/InputLabel";
+import { Box } from "@mui/system";
+import FormControl from "@mui/material/FormControl";
 
 function App() {
   const [data, setData] = useState([]);
@@ -50,21 +55,49 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header">
-        <h1>1001 Album du må høre før du dør</h1>
+      <div className="App-header">
+        <h1 style={{ fontSize: "10vh", marginTop: "-5vh" }}>1001 Album</h1>
+        <h2 style={{ fontSize: "8vh", marginTop: "-10vh" }}>du må høre</h2>
+        <h2 style={{ fontSize: "8vh", marginTop: "-10vh" }}>før du</h2>
+        <h2 style={{ fontSize: "8vh", marginTop: "-10vh" }}>dør</h2>
+        <img src="./img/vinyl.png" alt="vinyl logo" className="vinyl-logo" />
       </div>
-      <div className="options">
-        <select onChange={(e) => setSortTypeAsc(e.target.value)}>
-          <option value="AlbumNumber">Album Number ⬆️</option>
-          <option value="Year">Year ⬆️</option>
-          <option value="Rating">Rating ⬆️</option>
-        </select>
+      <div>
+        <Box
+          sx={{ maxWidth: 200 }}
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+        >
+          <FormControl fullWidth>
+            <InputLabel>Sorter oppover ⬆️</InputLabel>
+            <Select
+              style={{ backgroundColor: "white" }}
+              onChange={(e) => setSortTypeAsc(e.target.value)}
+              label="Sorter oppover ⬆️"
+            >
+              <MenuItem value="AlbumNumber">Album Number ⬆️</MenuItem>
+              <MenuItem value="Year">Year ⬆️</MenuItem>
+              <MenuItem value="Rating">Rating ⬆️</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
 
-        <select onChange={(e) => setSortTypeDesc(e.target.value)}>
-          <option value="AlbumNumber">Album Number ⬇️</option>
-          <option value="Year">Year ⬇️</option>
-          <option value="Rating">Rating ⬇️</option>
-        </select>
+        <Box
+          sx={{ maxWidth: 200 }}
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+        >
+          <FormControl fullWidth>
+            <InputLabel>Sorter nedover ⬇️</InputLabel>
+            <Select
+              style={{ backgroundColor: "white" }}
+              onChange={(e) => setSortTypeDesc(e.target.value)}
+              label="Sorter nedover ⬇️"
+            >
+              <MenuItem value="AlbumNumber">Album Number ⬇️</MenuItem>
+              <MenuItem value="Year">Year ⬇️</MenuItem>
+              <MenuItem value="Rating">Rating ⬇️</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
       </div>
       <Grid
         style={{ marginLeft: "auto", marginRight: "auto", marginTop: "2vh" }}
@@ -78,6 +111,8 @@ function App() {
                 marginLeft: "auto",
                 marginRight: "auto",
                 marginTop: "2vh",
+                backgroundColor: "#f5f5f5",
+                borderRadius: "20px",
               }}
               className="AlbumCard"
               sx={{ maxWidth: 345 }}
@@ -90,7 +125,12 @@ function App() {
                   alt={albums.Title}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography
+                    style={{ color: "#00223b" }}
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                  >
                     {albums.Title}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -99,7 +139,11 @@ function App() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions></CardActions>
+              <CardActions
+                style={{
+                  background: "linear-gradient(to right, #ce770d, #ff9311)",
+                }}
+              ></CardActions>
             </Card>
           </Grid>
         ))}
