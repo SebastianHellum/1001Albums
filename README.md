@@ -4,7 +4,7 @@
 This project is made for archiving and keeping track of Mari and Sebs rating to the albums in '1001 albums you must hear before you die'. All these ratings are highly subjective. The application is made in react⚛️
 
 #### Test in your browser 💿 
-<a href="https://1001albums.netlify.app/" target="_blank">1001albums.netlify.app/</a>\
+<a href="https://1001albums.netlify.app/" target="_blank">1001albums.netlify.app</a>\
 This version will be updated whenever we listen to a new album. 
 
 #### Download 💻
