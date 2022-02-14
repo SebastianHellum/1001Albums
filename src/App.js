@@ -128,11 +128,7 @@ function App() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions
-                style={{
-                  background: "linear-gradient(to right, #ce770d, #ff9311)",
-                }}
-              >
+              <CardActions style={{ backgroundColor: "#EEE" }}>
                 <a href={albums.Link} target="_blank" rel="noreferrer">
                   <img
                     src="./img/spotify.png"
@@ -148,6 +144,11 @@ function App() {
                   {albums.Comment}
                 </Typography>
               </CardActions>
+              <CardActions
+                style={{
+                  background: "linear-gradient(to right, #fd9a01, #fd6104)",
+                }}
+              ></CardActions>
             </Card>
           </Grid>
         ))}
