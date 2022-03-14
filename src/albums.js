@@ -411,9 +411,20 @@ export const albums = [
     Artist: "Charles Mingus",
     Title: "The Black Saint And The Sinner Lady",
     FavoriteSong: "",
-    OneToTen: 0,
-    Comment: "",
+    OneToTen: 3,
+    Comment: "Sur trompet, og bare rot",
     img: "./img/38.jpg",
     Link: "https://open.spotify.com/album/6Sts4Yh7KsDFwq2yTWrGGV",
   },
+  /*{
+    AlbumNumber: 39,
+    Year: 1963,
+    Artist: "James Brown",
+    Title: "Live At The Apollo",
+    FavoriteSong: "",
+    OneToTen: 0,
+    Comment: "",
+    img: "./img/39.jpg",
+    Link: "https://open.spotify.com/album/3vm6BtNvSuDOooTkFM54kP",
+  },*/
 ];
