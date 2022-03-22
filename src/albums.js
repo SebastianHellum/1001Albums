@@ -416,15 +416,15 @@ export const albums = [
     img: "./img/38.jpg",
     Link: "https://open.spotify.com/album/6Sts4Yh7KsDFwq2yTWrGGV",
   },
-  /*{
+  {
     AlbumNumber: 39,
     Year: 1963,
     Artist: "James Brown",
     Title: "Live At The Apollo",
     FavoriteSong: "",
-    OneToTen: 0,
-    Comment: "",
+    OneToTen: 5,
+    Comment: "Skilte seg ikke ut.",
     img: "./img/39.jpg",
     Link: "https://open.spotify.com/album/3vm6BtNvSuDOooTkFM54kP",
-  },*/
+  },
 ];
