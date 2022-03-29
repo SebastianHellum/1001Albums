@@ -427,4 +427,15 @@ export const albums = [
     img: "./img/39.jpg",
     Link: "https://open.spotify.com/album/3vm6BtNvSuDOooTkFM54kP",
   },
+  {
+    AlbumNumber: 40,
+    Year: 1963,
+    Artist: "Stan Getz & João Gilberto",
+    Title: "Getz/Gilberto",
+    FavoriteSong: "",
+    OneToTen: 5.5,
+    Comment: "Sånn musikk jeg ville spilt hvis jeg hadde en kafe i gamlebyen",
+    img: "./img/40.jpg",
+    Link: "https://open.spotify.com/album/3JvFflPIx7bB6lJ4qId2Er",
+  },
 ];
