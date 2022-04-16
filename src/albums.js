@@ -438,4 +438,15 @@ export const albums = [
     img: "./img/40.jpg",
     Link: "https://open.spotify.com/album/3JvFflPIx7bB6lJ4qId2Er",
   },
+  {
+    AlbumNumber: 41,
+    Year: 1964,
+    Artist: "The Beatles",
+    Title: "A Hard Day's Night",
+    FavoriteSong: "Can't Buy Me Love",
+    OneToTen: 7,
+    Comment: "Vi er ute!",
+    img: "./img/41.jpg",
+    Link: "https://open.spotify.com/album/6wCttLq0ADzkPgtRnUihLV",
+  },
 ];
