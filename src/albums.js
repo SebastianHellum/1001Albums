@@ -449,4 +449,40 @@ export const albums = [
     img: "./img/41.jpg",
     Link: "https://open.spotify.com/album/6wCttLq0ADzkPgtRnUihLV",
   },
+  {
+    AlbumNumber: 42,
+    Year: 1964,
+    Artist: "Jaques Brel",
+    Title: "Olympia 64",
+    FavoriteSong: "",
+    OneToTen: 4.5,
+    Comment: "Litt for streng",
+    img: "./img/42.jpg",
+    Link: "https://open.spotify.com/album/2rUCBUojo3bWwFYyR9GvDx",
+  },
+
+  {
+    AlbumNumber: 43,
+    Year: 1964,
+    Artist: "Solomon Burke",
+    Title: "Rock 'n' Soul",
+    FavoriteSong: "",
+    OneToTen: 6.5,
+    Comment: "Burde høres på når det er jul",
+    img: "./img/43.jpg",
+    Link: "https://open.spotify.com/album/152R8N9N0ACnWPNOBIO4M8",
+  },
+  /*
+    {
+    AlbumNumber: 44,
+    Year: 1964,
+    Artist: "Dusty Springfield",
+    Title: "A Girl Called Dusty",
+    FavoriteSong: "",
+    OneToTen: 0,
+    Comment: "",
+    img: "./img/44.jpg",
+    Link: "https://open.spotify.com/album/1ulDMEpgJC1L4W05dMyqHl",
+  },
+  */
 ];
